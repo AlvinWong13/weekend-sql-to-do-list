@@ -10,6 +10,28 @@
   <title>Weekend To Do List</title>
 </head>
 <body>
-  <h1>To Do List</h1>
+  <header>
+    <h1>To Do List</h1>
+  </header>
+  <main>
+    <div class="inputs">
+      <input type="text" id="listIn" placeholder="Add task here" class="form-control">
+      <div class="input-group-append">
+        <button id="button-add" class="btn-success">Add to List</button>
+      </div>
+    </div>
+    <section class="fullList">
+      <div class="notCompleted">
+        <ul id="notCompletedToDoList">
+          <li>Not Completed:</li>
+        </ul>
+      </div>
+      <div class="complete">
+        <ul id="completedToDoList">
+          <li>Completed:</li>
+        </ul>
+      </div>
+    </section>
+  </main>
 </body>
 </html>

@@ -1,13 +1,14 @@
 const express = require('express');
-const app = express();
 const bodyParser = require('body-parser');
-const toDoRouter = require('./routes/to_do_router');
+const app = express();
 
 // set up body parser and json
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 app.use(express.static('server/public'));
 
 // set up routes
+let toDoRouter = require('./routes/to_do_router');
 app.use('/to_do_library', toDoRouter);
 
 // set up port
