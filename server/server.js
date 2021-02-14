@@ -9,7 +9,7 @@ app.use(express.static('server/public'));
 
 // set up routes
 let toDoRouter = require('./routes/to_do_router');
-app.use('/todolibrary', toDoRouter);
+app.use('/todo', toDoRouter);
 
 // set up port
 const PORT = 5000;

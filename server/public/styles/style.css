@@ -1,3 +1,64 @@
+ul {
+  list-style-type: none;
+  margin-right: 0;
+}
+
 body {
-  background-color: antiquewhite;
+  background-color: rgba(20, 20, 20, 0.788);
+  font-size: 1.4rem;
+  color: rgb(233, 230, 230);
+}
+
+.toDoTask {
+  padding: 6px;
+}
+
+.checkBox {
+  margin-right: 5px;
+}
+
+.taskList {
+  display: inline-flex;
+  margin: 2px;
+}
+
+.removeBtn {
+  justify-content: inline-end;
+  margin-left: 5px;
+  display: inline;
+  background-color: #99464e;
+  border-color: #99464e;
+}
+
+.uncompletedList {
+  margin: 0;
+  display: inline-flex;
+  width: 590px;
+  border: solid black 1px;
+}
+.completedList {
+  margin: 0;
+  display: inline-flex;
+  width: 590px;
+  border: solid black 1px;
+}
+
+.inputs{
+  padding: 2px;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(78, 76, 76, 0.788);
+  width: 500px !important;
+}
+
+#notFinishedTasks {
+  padding-left: 5px;
+}
+
+#finishedTasks {
+  padding-left: 5px;
+}
+
+.toDoTask input:checked {
+  background-color: rgb(26, 97, 17);
 }
