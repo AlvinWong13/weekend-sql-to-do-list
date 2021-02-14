@@ -39,7 +39,8 @@ function renderToDoList(taskArray) {
   }
 } // end renderToDoList
 
-function addTask() {
+function addTask(event) {
+  event.preventDefault();
   let newTask = {
     task: $('#taskIn').val()
   };
@@ -77,6 +78,7 @@ function completedTasks() {
   })
 } // end completedTasks
 
+// function to post question before removing task
 function removeTaskQuestion() {
   let idToRemove = $(this).closest('li').data('id');
   let initTask = $(this).closest('li').text();

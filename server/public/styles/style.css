@@ -4,9 +4,9 @@ ul {
 }
 
 body {
-  background-color: rgba(20, 20, 20, 0.788);
+  background-color: rgb(241, 241, 241);
   font-size: 1.4rem;
-  color: rgb(233, 230, 230);
+  color: rgb(0, 0, 0);
 }
 
 .toDoTask {
